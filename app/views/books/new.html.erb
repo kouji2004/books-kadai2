@@ -1,0 +1,51 @@
+<h1 class="index-hed">投稿一覧ページ</h1>
+<table>
+  <thead>
+      <tr>
+        <th>タイトル</th>
+        <th>本文</th>
+        <th> </th>
+      </tr>
+  </thead>  
+
+<% @books.each do |book| %>
+<tbody>
+      <tr>
+　        <td><%=  book.title %></td>
+　        <td><%=  book.body %></td>
+　        <td><%= link_to '編集', edit_book_path(book) %></td>
+          <td><%= link_to "詳細", book_path(book) %></td>
+          <td><%= link_to '削除', destroy_book_path(book), method: :delete, "data-confirm" => "本当に削除しますか？" %></td>  
+     </tr>
+     <%end%>
+  </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h1>投稿ページ</h1>
+<%= form_with model: @book do |f| %>
+
+<div class=" new-title">
+<p>タイトル</p>
+<%= f.text_field :title %>
+</div>
+
+<div class= "new-body"> 
+<p>本文</p>
+<%= f.text_area :body %>
+</div>
+
+<%= f.submit "投稿" %>
+<%end%>

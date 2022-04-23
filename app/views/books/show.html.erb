@@ -1,0 +1,14 @@
+<div class= show-body>
+<h1>詳細ページ</h1>
+<P><strong>title:</strong>
+<%= @book.title %>
+</P>
+
+<p><strong>body:</strong>
+<%= @book.body %>
+</p>
+
+
+
+<br><%= link_to "編集", "/books/#{@book.id}/edit" %>
+<%= link_to "戻る", new_book_path %>

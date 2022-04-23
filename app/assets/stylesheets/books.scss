@@ -1,0 +1,116 @@
+body{
+    background-color: #fff;
+    color: #333;
+    font-family: verdana, arial, helvetica, sans-serif;
+    font-size: 13px;
+    line-height: 18px;
+    margin: 33px;
+}
+
+p, ol, ul, td{
+    background-color: #fff;
+    color: #333;
+    font-family: verdana, arial, helvetica, sans-serif;
+    font-size: 13px;
+    line-height: 18px;
+    margin: 33px;
+}
+
+
+
+table {
+    box-sizing: border-box;
+    border-spacing: 2px;
+}
+
+thead {
+    display: table-header-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+
+th {
+    padding-bottom: 5px;
+}
+
+
+
+td {
+    padding-bottom: 7px;
+    padding-right: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+thead {
+    display: table-header-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+
+.index-hed{
+    display: block;
+    font-size: 2em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+
+.new-title p{
+  margin:0;
+  padding-top:15px;
+}
+
+.new-body p{
+    margin:0;
+    padding-top:15px;
+}
+
+
+
+
+
+.show-body{
+    background-color: #fff;
+    color: #333;
+    font-family: verdana, arial, helvetica, sans-serif;
+    font-size: 13px;
+    line-height: 18px;
+    margin: 33px;
+}
+
+.show-box{
+    margin:33px;
+}
+
+
+
+
+
+
+
+
+
+
+.edit-body h4{
+    margin:0;
+    padding-top:15px;
+}
+
+
+
+// Place all the styles related to the books controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/

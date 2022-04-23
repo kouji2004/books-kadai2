@@ -1,0 +1,16 @@
+
+
+<h1 class="index-hed">投稿一覧ページ</h1>
+<table>
+  <thead>
+    <th>タイトル</th>
+    <th>本文</th>
+  </thead>  
+</table>
+
+
+<% @books.each do |book| %>
+<%= link_to book.title, "/books/#{book.id}" %>
+<%= link_to book.body,  "/books/#{book.id}" %>
+
+<%end%>
